@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <header>
+        <nav>
+            <div class="left">Aman Kumar Gautam</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                    <li><a href="/">Login / Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
+    <header>
+        <nav>
+            <div class="left">Aman Kumar Gautam</div>
+            <div class="right" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">&#8942;</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <nav class="purple">Aman Kumar Guatam</nav>
+                <div>And I am a passonate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <a href="Aman CV.pdf" download>
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/instinctaman">
+                        <button class="btn">Visit Github</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="Coder.jpg" alt="Coder">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="Coder.jpg" alt="Coder" class="image-top">
+                    <div class="vertical-title">
+                        HTML develpoer
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor necessitatibus odit explicabo,
+                        facilis, placeat ipsam molestias cupiditate non qui, ratione illo perferendis. Illo!
+                    </div>
+                </div>
+                <div class="vertical"> <img src="Coder.jpg" alt="Coder" class="image-top">
+                    <div class="vertical-title">
+                        HTML develpoer
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor necessitatibus odit explicabo,
+                        facilis, placeat ipsam molestias cupiditate non qui, ratione illo perferendis. Illo!
+                    </div>
+                </div>
+                <div class="vertical"> <img src="Coder.jpg" alt="Coder" class="image-top">
+                    <div class="vertical-title">
+                        HTML develpoer
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor necessitatibus odit explicabo,
+                        facilis, placeat ipsam molestias cupiditate non qui, ratione illo perferendis. Illo!
+                    </div>
+                </div>
+                <div class="vertical"> <img src="Coder.jpg" alt="Coder" class="image-top">
+                    <div class="vertical-title">
+                        HTML develpoer
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor necessitatibus odit explicabo,
+                        facilis, placeat ipsam molestias cupiditate non qui, ratione illo perferendis. Illo!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Aman's Developer Portfolio</h3>
+                <p>Building ideas into reality.</p>
+            </div>
+            <div class="footer-second">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Services</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>App Design</li>
+                    <li>UI/UX</li>
+                    <li>Consulting</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            © 2025 www.amanportfolio.com | All rights reserved.
+        </div>
+    </footer>
+    
+    <!-- <marquee behavior="hello " direction="up">hghgfthjgc</marquee> -->
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Developer.', '&amp; Application designer.'],
+            typeSpeed: 100,
+        });
+    </script>
+
+</body>
+
+</html>
