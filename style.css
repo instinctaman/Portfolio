@@ -213,8 +213,54 @@ footer {
     border-top: 1px solid gray;
 }
 
-
-
+.save{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  .form-group textarea {
+    height: 120px;
+  }
+  .form-group button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
 
 /* Make navigation stack on small screens */
 @media (max-width: 768px) {
