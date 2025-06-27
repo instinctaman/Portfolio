@@ -1,0 +1,23 @@
+@media (max-width:996px) {
+    .rightSection img {
+        margin-top: 12px;
+    }
+    .rightSection{
+                text-align: center;
+        margin-top: 50px;
+    }
+}
+@media (min-width:1350px) and (max-width: 1600px) {
+    .firstSection {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    text-align: center;
+
+}
+.thodaniche {
+    position: relative;
+    bottom: 570px;
+    margin: 20px 0 20px 0;
+    height: 0;
+}
+}
