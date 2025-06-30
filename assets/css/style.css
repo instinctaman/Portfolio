@@ -1037,7 +1037,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     max-width: 1230px;
-    padding: 40px 15px 835px;
+    padding: 40px 15px 950px;
     position: relative;
   }
 }
@@ -1046,7 +1046,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     max-width: 1230px;
-    padding: 40px 15px 835px;
+    padding: 40px 15px 950px;
     position: relative;
   }
 }
@@ -1055,13 +1055,13 @@ a {
     margin-left: auto;
     margin-right: auto;
     max-width: 1230px;
-    padding: 40px 15px 835px;
+    padding: 40px 15px 950px;
     position: relative;
   }
 }
 @media (max-width: 319px) {
   .footer-content {
-    padding: 40px 15px 815px;
+    padding: 40px 15px 1000px;
 }
     
 }
@@ -1080,7 +1080,7 @@ a {
       margin-left: auto;
       margin-right: auto;
       max-width: 1230px;
-      padding: 40px 15px 300px;
+      padding: 40px 15px 330px;
       position: relative;
   }
 
