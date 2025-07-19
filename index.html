@@ -8,20 +8,9 @@
   <link rel="icon" type="image/jpeg" href="assets/img/image-modified.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700'>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
   <style>
     body {
       color: #e4d3d3;
@@ -99,20 +88,23 @@
       <h2 style="font-size: 44px;">Experience</h2>
       <h3 class="fnt-14">What have I done so far..</h3>
     </div>
-    <div class="modal-frame">
-      <div class="modal">
-        <div class="modal-inset">
-          <div class="container">
+    <link rel="stylesheet" href="assets/css/popup.css">
+    <!-- popUp-->
+     
+	
+	
+	<!-- Modal -->
+	<div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<div class="container">
             <div class="row">
               <div class="col-lg-6">
                 <img src="assets/img/Experience/College.avif" alt=""
                   style="width: 100%; height: auto; object-fit: cover;">
               </div>
               <div class="col-lg-6">
-
-                <div class="button close"><i class="fa fa-close"></i></div>
-
-                <div class="modal-body">
+                <div class="modal-body1">
                   <h3 class="Sajao">My college Experience</h3>
                   <p class="sajao-P">During my Bachelor of Computer Applications (BCA) at Global
                     Institute of Information Technology, I built a strong foundation in programming,
@@ -127,15 +119,24 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="modal-overlay"></div> -->
 
-    <div class="popup" id="myPopup" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup');}">
-      <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
-        <h2 id="popupTitle" class="Sajao">My Confrences</h2>
-        <div class="container">
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24">
+						<path
+							d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+						<path d="M0 0h24v24h-24z" fill="none" />
+					</svg>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<div class="container">
           <div class="row">
             <div class="col-lg-6">
               <img src="" alt="">
@@ -154,12 +155,22 @@
             </div>
           </div>
         </div>
-        <button id="closePopup" onClick="closePopup('#myPopup');" aria-label="Close popup">Close</button>
-      </div>
-    </div>
-    <div class="popup" id="myPopup1" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup1');}">
-      <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
-        <div class="container">
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24">
+						<path
+							d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+						<path d="M0 0h24v24h-24z" fill="none" />
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal3" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<div class="container">
           <div class="row">
             <div class="col-lg-6">
               <img class="responsive" src="assets/img/Experience/Online_inter.png" alt="">
@@ -176,12 +187,22 @@
           </div>
         </div>
 
-        <button id="closePopup1" onClick="closePopup('#myPopup1');" aria-label="Close popup">Close</button>
-      </div>
-    </div>
-    <div class="popup" id="myPopup2" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup2');}">
-      <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
-        <div class="container">
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24">
+						<path
+							d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+						<path d="M0 0h24v24h-24z" fill="none" />
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal4" class="modal modal__bg" role="dialog" aria-hidden="true">
+		<div class="modal__dialog">
+			<div class="modal__content">
+				<div class="container">
           <div class="row">
             <div class="col-lg-6">
               <img class="responsive" src="assets/img/Experience/Online_inter.png" alt="">
@@ -195,9 +216,20 @@
             </div>
           </div>
         </div>
-        <button id="closePopup2" onClick="closePopup('#myPopup2');" aria-label="Close popup">Close</button>
-      </div>
-    </div>
+
+				<!-- modal close button -->
+				<a href="" class="modal__close demo-close">
+					<svg class="" viewBox="0 0 24 24">
+						<path
+							d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+						<path d="M0 0h24v24h-24z" fill="none" />
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+  <!--popUp end-->
+
     <section class="page-content">
       <div class="card">
         <div class="content">
@@ -205,7 +237,8 @@
           <p class="copy">I have successfully completed my Bachelor of Computer Applications (BCA) from Global
             Institute of Information Technology</p>
 
-          <button class="btn fancy-btn open">More Info.</button>
+          <button href="" data-modal="#modal" class="modal__trigger btn">MORE INFO.</button>
+          
         </div>
       </div>
       <div class="card">
@@ -213,24 +246,23 @@
           <h2 class="title">Conference</h2>
           <p class="copy">Attended tech conferences to explore emerging trends, gain insights, and enhance my
             practical knowledge beyond academics.</p>
-          <button class="btn" id="openMyPopup" data-popup="myPopup" onClick="openPopup('#myPopup')"
-            aria-controls="myPopup" aria-label="Open popup">View Certificate</button>
+          <!-- <button class="btn" id="openMyPopup" data-popup="myPopup" onClick="openPopup('#myPopup')"
+            aria-controls="myPopup" aria-label="Open popup">View Certificate</button> -->
+            <button href="" data-modal="#modal2" class="modal__trigger btn">View Certificates</button>
         </div>
       </div>
       <div class="card">
         <div class="content">
           <h2 class="title">Online Internship</h2>
           <p class="copy">I have successfully completed a 1-month online internship</p>
-          <button class="btn" id="openMyPopup" data-popup="myPopup" onClick="openPopup('#myPopup1')"
-            aria-controls="myPopup" aria-label="Open popup">View Certificate</button>
+          <button href="" data-modal="#modal3" class="modal__trigger btn">View Certificate</button>
         </div>
       </div>
       <div class="card">
         <div class="content">
           <h2 class="title">Offline Internship</h2>
           <p class="copy">I have successfully completed a 3-month offline internship</p>
-          <button class="btn" id="openMyPopup" data-popup="myPopup" onClick="openPopup('#myPopup2')"
-            aria-controls="myPopup" aria-label="Open popup">View Certificate</button>
+          <button href="" data-modal="#modal4" class="modal__trigger btn">View Certificate</button>
         </div>
       </div>
     </section>
@@ -397,7 +429,8 @@
       backDelay: 4000
     });
   </script>
-
+  
+<script src="assets/js/popup.js"></script>
 </body>
 
 </html>

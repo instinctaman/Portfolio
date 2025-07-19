@@ -1,26 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>And I am a passonate</div>
-                <span id="element"></span>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['<i>Web</i> Developer.', '&amp; Application designer.'],
-            typeSpeed: 100,
-        });
-        var typed = new Typed('#element', {
-      strings: ['<i>Web</i> Developer.', '&amp; Application designer.'],
-      typeSpeed: 100,
-      backSpeed: 50,
-      loop: true,
-      backDelay: 4000 // Wait for 4 seconds before restarting
-    });
-    </script>
-</body>
-</html>
+<div class="modal-frame">
+      <div class="modal">
+        <div class="modal-inset">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img src="assets/img/Experience/College.avif" alt=""
+                  style="width: 100%; height: auto; object-fit: cover;">
+              </div>
+              <div class="col-lg-6">
+
+                <div class="button close"><i class="fa fa-close"></i></div>
+
+                <div class="modal-body">
+                  <h3 class="Sajao">My college Experience</h3>
+                  <p class="sajao-P">During my Bachelor of Computer Applications (BCA) at Global
+                    Institute of Information Technology, I built a strong foundation in programming,
+                    web development, and database management. The academic journey was not just
+                    about theory—it involved hands-on projects, practical labs, and continuous
+                    learning. My college experience helped me develop a problem-solving mindset,
+                    collaborate effectively in teams, and gain confidence in applying technical
+                    knowledge to real-world scenarios.</p>
+                  <!-- <p class="ps">**I know the SASS is a bit messy, I did this on the fly and for fun <br /> and
+                            w.e. I DO WHAT I WANT!!</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="modal-overlay"></div> -->
+
+    <div class="popup" id="myPopup" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup');}">
+      <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
+        <h2 id="popupTitle" class="Sajao">My Confrences</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="" alt="">
+              <p id="popupText" class="manage_gap">I actively participated as a volunteer in the
+                International Conference Meeting on Recent Developments in the Architecture of Smart
+                Cities using Internet of Things (ICM-2023) held at Global Institute of Information
+                Technology, Greater Noida, on 29th–30th October 2023.</p>
+            </div>
+            <div class="col-lg-6">
+              <img src="" alt="">
+              <p id="popupText" class="manage_gap">I attended a seminar at Trinity Institute of
+                Innovations in Professional Studies (TIIPS) on "Impact of AI, Machine Learning, and Big
+                Data in the Financial Ecosystem" held on 28th February 2025, which enhanced my
+                understanding of emerging technologies and their real-world applications in the
+                financial domain.</p>
+            </div>
+          </div>
+        </div>
+        <button id="closePopup" onClick="closePopup('#myPopup');" aria-label="Close popup">Close</button>
+      </div>
+    </div>
+    <div class="popup" id="myPopup1" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup1');}">
+      <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="responsive" src="assets/img/Experience/Online_inter.png" alt="">
+            </div>
+            <div class="col-lg-6">
+              <h2 id="popupTitle" class="Sajao">Online Internship</h2>
+              <p id="popupText" class="manage_gap">Successfully completed a 4-week Web Development
+                internship at ELiteTech
+                Intern from March 31 to April 30, 2025. Gained hands-on experience in front-end and
+                back-end development, working with technologies like HTML, CSS, JavaScript, and PHP.
+                Earned outstanding remarks for dedication, problem-solving skills, and contribution to
+                real-time projects under professional mentorship.</p>
+            </div>
+          </div>
+        </div>
+
+        <button id="closePopup1" onClick="closePopup('#myPopup1');" aria-label="Close popup">Close</button>
+      </div>
+    </div>
+    <div class="popup" id="myPopup2" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup2');}">
+      <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="responsive" src="assets/img/Experience/Online_inter.png" alt="">
+            </div>
+            <div class="col-lg-6">
+              <h2 id="popupTitle" class="Sajao">Offline Internship</h2>
+              <p id="popupText" class="manage_gap">Completed a 3-month offline internship in Web Development at Innoweb
+                Solution, where I gained hands-on experience in designing responsive websites, developing dynamic web
+                applications using HTML, CSS, JavaScript, PHP, and MySQL, and collaborating in a professional
+                development environment to deliver real-world projects.</p>
+            </div>
+          </div>
+        </div>
+        <button id="closePopup2" onClick="closePopup('#myPopup2');" aria-label="Close popup">Close</button>
+      </div>
+    </div>
