@@ -318,16 +318,12 @@ h1 {
 }
 
 .navbar-brand{
+    width: 60px;
     text-align: center;
 }
 
 .responsive {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.responsive-lg {
-    width: 20%;
     height: auto;
     object-fit: cover;
 }
