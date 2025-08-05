@@ -60,7 +60,7 @@ margin: 2em 0;
 }
 
 form {
-  /* padding: 2.3rem 2.2rem; */
+  padding: 2.3rem 2.2rem;
   z-index: 10;
   overflow: hidden;
   position: relative;
@@ -281,6 +281,27 @@ textarea.input {
   top: calc(50% - 180px);
   left: calc(50% - 180px);
 }
+.big-circle1 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #1cd4af, #159b80);
+  bottom: 30%;
+  left: 50%;
+  transform: translate(40%, 38%);
+}
+
+.big-circle1:after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  top: calc(50% - 180px);
+  left: calc(50% - 180px);
+}
 
 .square {
   position: absolute;
@@ -320,6 +341,11 @@ textarea.input {
     transform: scale(0.9) translate(-40%, 30%);
     right: 50%;
   }
+  .big-circle1 {
+    bottom: 75%;
+    transform: scale(0.9) translate(40%, 30%);
+    left: 50%;
+  }
 
   .text {
     margin: 1rem 0 1.5rem 0;
@@ -340,13 +366,14 @@ textarea.input {
   }
 
   .square,
+  .big-circle1,
   .big-circle {
     display: none;
   }
 
   form,
   .contact-info {
-    max-width: ;
+    /* max-width: ; */
     padding: 1.7rem 1.6rem;
   }
     .form {

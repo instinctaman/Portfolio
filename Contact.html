@@ -17,48 +17,54 @@
 </head>
 
 <body>
- <div id="header"></div>
- <link rel="stylesheet" href="assets/css/header.css">
+  <div id="header"></div>
+  <link rel="stylesheet" href="assets/css/header.css">
   <!-- <nav class="navbar bg-primary" data-bs-theme="dark"> -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-mainbg">
-  <div class="container-fluid justify-content-evenly">
-    <a class="navbar-brand" href="#" title="Home" aria-label="Home">
+      <div class="container-fluid justify-content-evenly">
+        <a class="navbar-brand" href="#" title="Home" aria-label="Home">
           <img src="assets/img/image-modified.png" alt="My Portfolio Logo" class="responsive-lg">
         </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: beige;">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <div class="hori-selector" style="top: 0;"><div class="left"></div><div class="right"></div></div>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"><i class="fas fa-house"></i> Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="about.html"><i class="fas fa-satellite"></i> About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html"><i class="far fa-clone"></i> Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="project.html"><i class="far fa-calendar-alt"></i> Projects</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><i class="far fa-chart-bar"></i> Contact Me</a>
-        </li>
-        <!-- <li class="nav-item">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          style="background-color: beige;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div class="hori-selector" style="top: 0;">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-house"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><i class="fas fa-satellite"></i> About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html"><i class="far fa-clone"></i> Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html"><i class="far fa-calendar-alt"></i> Projects</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="far fa-chart-bar"></i> Contact Me</a>
+            </li>
+            <!-- <li class="nav-item">
           <a class="nav-link" href="#"><i class="far fa-copy"></i> Documents</a>
         </li> -->
-              </ul>
-      <form class="d-flex ms-3" role="search" id="navbarSearchForm">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="navbarSearchInput">
-        <button class="btn btn-outline-light" type="submit">Search</button>
-      </form>
-      </ul>
-    </div>
-  </div>
-</nav>
+          </ul>
+          <form class="d-flex ms-3" role="search" id="navbarSearchForm">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+              id="navbarSearchInput">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
   <script src="assets/js/header.js"></script>
   <div class="containers">
@@ -72,22 +78,24 @@
         </p> -->
 
         <div class="info">
-          <a href="https://goo.gl/maps/u7vvVRmi2yTysDEM9?g_st=aw" target="_blank"><div class="information">
-            <i class="fas fa-map-marker-alt"></i> &nbsp; &nbsp;
+          <a href="https://goo.gl/maps/u7vvVRmi2yTysDEM9?g_st=aw" target="_blank">
+            <div class="information">
+              <i class="fas fa-map-marker-alt"></i> &nbsp; &nbsp;
 
-            <p class="m-0">Sirsa, Greater Noida</p>
-          </div>
+              <p class="m-0">Sirsa, Greater Noida</p>
+            </div>
           </a>
-          <a href="mailto:instinctak07@gmail.com"><div class="information">
-            <i class="fas fa-envelope"></i> &nbsp &nbsp
-            <p class="m-0">lorem@ipsum.com</p>
-          </div>
+          <a href="mailto:instinctak07@gmail.com">
+            <div class="information">
+              <i class="fas fa-envelope"></i> &nbsp &nbsp
+              <p class="m-0">lorem@ipsum.com</p>
+            </div>
           </a>
           <a href="tel:+91 8287045234" title="Give me a call">
-          <div class="information">
-            <i class="fas fa-phone"></i>&nbsp&nbsp
-            <p class="m-0">+91 8287045234</p>
-          </div>
+            <div class="information">
+              <i class="fas fa-phone"></i>&nbsp&nbsp
+              <p class="m-0">+91 8287045234</p>
+            </div>
           </a>
         </div>
 
@@ -114,43 +122,46 @@
         <span class="circle one"></span>
         <span class="circle two"></span>
 
-        <form class="Contactform" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" autocomplete="off">
-  <input type="hidden" name="form-name" value="contact">
-  <p hidden>
-    <label>Don’t fill this out: <input name="bot-field" /></label>
-  </p>
+        <form class="Contactform" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+          autocomplete="off">
+          <input type="hidden" name="form-name" value="contact">
+          <p hidden>
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
 
-  <h3 class="title">Contact us</h3>
+          <h3 class="title">Contact us</h3>
 
-  <div class="input-container">
-    <input type="text" name="name" class="input" required />
-    <label for="">Username</label>
-    <span>Username</span>
-  </div>
+          <div class="input-container">
+            <input type="text" name="name" class="input" required />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
 
-  <div class="input-container">
-    <input type="email" name="email" class="input" required />
-    <label for="">Email</label>
-    <span>Email</span>
-  </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" required />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
 
-  <div class="input-container">
-    <input type="tel" name="phone" class="input" required />
-    <label for="">Phone</label>
-    <span>Phone</span>
-  </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" required />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
 
-  <div class="input-container textarea">
-    <textarea name="message" class="input" required></textarea>
-    <label for="">Message</label>
-    <span>Message</span>
-  </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input" required></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
 
-  <input type="submit" value="Send" class="btn" />
-</form>
+          <input type="submit" value="Send" class="btn" />
+        </form>
 
       </div>
     </div>
+
+    <span class="big-circle1"></span>
   </div>
   <script>const inputs = document.querySelectorAll(".input");
 

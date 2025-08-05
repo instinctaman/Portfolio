@@ -7,14 +7,24 @@
     <title>Aman's Portfolio</title>
     <link rel="icon" type="image/jpeg" href="assets/img/image-modified.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    
     <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/card_style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/header.css">
     <style>
       body {
         color: #e4d3d3;
+      }
+      #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1050;
+        transition: top 0.4s ease;
       }
     </style>
   </head>
@@ -23,7 +33,7 @@
     
     <div id="header"></div>
     <!-- <nav class="navbar bg-primary" data-bs-theme="dark"> -->
-    <header>
+    <header id="navbar">
       <nav class="navbar navbar-expand-lg navbar-mainbg">
     <div class="container-fluid justify-content-evenly">
       <a class="navbar-brand" href="#" title="Home" aria-label="Home">
@@ -216,7 +226,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
-                <img class="responsive" src="assets/img/Experience/Online_inter.png" alt="">
+                <img class="responsive-lg" src="assets/img/Experience/Online_inter.png" alt="">
               </div>
               <div class="col-lg-6">
                 <h2 id="popupTitle" class="Sajao">Online Internship</h2>
@@ -248,7 +258,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
-                <img class="responsive" src="assets/img/Experience/Online_inter.png" alt="">
+                <img class="responsive-lg" src="assets/img/Experience/Online_inter.png" alt="">
               </div>
               <div class="col-lg-6">
                 <h2 id="popupTitle" class="Sajao">Offline Internship</h2>
@@ -471,6 +481,23 @@
         loop: true,
         backDelay: 4000
       });
+
+      // Hide navbar on scroll down, show on scroll up
+      (function () {
+        const navbar = document.getElementById('navbar');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > lastScrollY && window.scrollY > 60) {
+            // Scrolling down
+            navbar.style.top = '-100px';
+          } else {
+            // Scrolling up
+            navbar.style.top = '0';
+          }
+          lastScrollY = window.scrollY;
+        });
+      })();
     </script>
     
   <script src="assets/js/popup.js"></script>
