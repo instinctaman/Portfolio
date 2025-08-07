@@ -20,7 +20,7 @@
   <div id="header"></div>
   <link rel="stylesheet" href="assets/css/header.css">
   <!-- <nav class="navbar bg-primary" data-bs-theme="dark"> -->
-  <header>
+  <header id="navbar">
     <nav class="navbar navbar-expand-lg navbar-mainbg">
       <div class="container-fluid justify-content-evenly">
         <a class="navbar-brand" href="#" title="Home" aria-label="Home">
@@ -43,7 +43,7 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html"><i class="fas fa-satellite"></i> About Me</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a class="nav-link" href="services.html"><i class="far fa-clone"></i> Services</a>
             </li>
             <li class="nav-item">
@@ -53,8 +53,8 @@
               <a class="nav-link" href="#"><i class="far fa-chart-bar"></i> Contact Me</a>
             </li>
             <!-- <li class="nav-item">
-          <a class="nav-link" href="#"><i class="far fa-copy"></i> Documents</a>
-        </li> -->
+            <a class="nav-link" href="#"><i class="far fa-copy"></i> Documents</a>
+          </li> -->
           </ul>
           <form class="d-flex ms-3" role="search" id="navbarSearchForm">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
@@ -69,6 +69,7 @@
   <script src="assets/js/header.js"></script>
   <div class="containers">
     <span class="big-circle"></span>
+    <!-- <span class="big-circle1"></span> -->
     <!-- <img src="img/shape.png" class="square" alt="" /> -->
     <div class="form">
       <div class="contact-info">
@@ -88,7 +89,7 @@
           <a href="mailto:instinctak07@gmail.com">
             <div class="information">
               <i class="fas fa-envelope"></i> &nbsp &nbsp
-              <p class="m-0">lorem@ipsum.com</p>
+              <p class="m-0">instinctak07@gmail.com</p>
             </div>
           </a>
           <a href="tel:+91 8287045234" title="Give me a call">
@@ -160,8 +161,6 @@
 
       </div>
     </div>
-
-    <span class="big-circle1"></span>
   </div>
   <script>const inputs = document.querySelectorAll(".input");
 
@@ -199,17 +198,17 @@
           </div>
           <div class="footer-menu">
             <h2 class="footer-menu-name"> Get Started</h2>
-            <ul id="menu-get-started" class="footer-menu-list">
-              <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Start</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Documentation</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-product">
-                <a href="#">Installation</a>
-              </li>
-            </ul>
+            <!-- <ul id="menu-get-started" class="footer-menu-list">
+                <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#">Start</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#">Documentation</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                  <a href="#">Installation</a>
+                </li>
+              </ul> -->
           </div>
         </div>
         <div class="footer-content-column">
@@ -217,14 +216,14 @@
             <h2 class="footer-menu-name"> Company</h2>
             <ul id="menu-company" class="footer-menu-list">
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Contact</a>
+                <a href="Contact.html">Contact</a>
               </li>
-              <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
-                <a href="#">News</a>
-              </li>
-              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="#">Careers</a>
-              </li>
+              <!-- <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                  <a href="#">News</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#">Careers</a>
+                </li> -->
             </ul>
           </div>
           <div class="footer-menu">
@@ -254,7 +253,7 @@
                 <a href="project.html">Projects</a>
               </li>
               <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="Contact.html">Contact</a>
+                <a href="services.html">Services</a>
             </ul>
           </div>
         </div>
@@ -262,7 +261,7 @@
           <div class="footer-call-to-action">
             <h2 class="footer-call-to-action-title"> Let's Chat</h2>
             <p class="footer-call-to-action-description"> Have a support question?</p>
-            <a class="footer-call-to-action-button button" href="#" target="_self"> Get in Touch </a>
+            <a class="footer-call-to-action-button button" href="Contact.html" target="_self"> Get in Touch </a>
           </div>
           <div class="footer-call-to-action">
             <h2 class="footer-call-to-action-title"> You Can Call Me</h2>
@@ -285,20 +284,22 @@
               </path>
             </svg>
           </a>
-          <a class="footer-social-link twitter" href="#" target="_blank">
+          <a class="footer-social-link twitter" href="https://x.com/AmanKumar262665" target="_blank">
             <span class="hidden-link-text">Twitter</span>
             <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
               <path class="footer-social-icon-path"
-                d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219 ">
-              </path>
+                d="M12.6.75h2.454L9.694 6.892 16 15.25h-4.937L7.196 10.18 2.771 15.25H.316l5.733-6.57L0 .75H5.063l3.495 4.633L11.74.75zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                fill="currentColor" />
             </svg>
           </a>
-          <a class="footer-social-link youtube" href="#" target="_blank">
-            <span class="hidden-link-text">Youtube</span>
+          <a class="footer-social-link youtube" href="https://www.instagram.com/aman_is_tough_07?igsh=M2N0ZTNvb3pobnli"
+            target="_blank">
+            <span class="hidden-link-text">Instagram</span>
             <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
               <path class="footer-social-icon-path"
-                d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z">
+                d="M16 8a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 13.2A5.2 5.2 0 1 1 21.2 16 5.206 5.206 0 0 1 16 21.2zm6.4-13.44a1.92 1.92 0 1 1-1.92-1.92 1.92 1.92 0 0 1 1.92 1.92zM28 16a12 12 0 1 0-12 12A12.013 12.013 0 0 0 28 16zm-3.2 0a8.8 8.8 0 1 1-8.8-8.8 8.811 8.811 0 0 1 8.8 8.8z">
               </path>
+
             </svg>
           </a>
           <a class="footer-social-link github" href="https://github.com/instinctaman" target="_blank"
