@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aman's Portfolio</title>
   <link rel="icon" type="image/jpeg" href="assets/img/image-modified.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
 
   <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -27,15 +28,6 @@
       width: 100%;
       z-index: 1050;
       transition: top 0.4s ease;
-    }
-
-    .terms {
-      border-radius: 10px;
-      padding-top: 50px;
-      margin: auto;
-      width: 80%;
-      text-align: center;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 1.1);
     }
   </style>
 </head>
@@ -134,7 +126,7 @@
               <div>And I am a passonate</div>
               <span id="element"></span>
               <div class="button">
-                <a href="Aman CV.pdf" download>
+                <a href="assets/pdf/Aman CV.pdf" download>
                   <button class="btn">Download Resume</button>
                 </a>
                 <a href="https://github.com/instinctaman">
@@ -208,15 +200,23 @@
         <div class="modal__content">
           <div class="container">
             <div class="row">
-              <div class="col-lg-6">
-                <img src="" alt="">
+              <div class="col-lg-6 d-ruby">
+                <div class="setSize d-flex" style="height: 300px;">
+                  <div class="setSize m-auto" style="width: 360px; height: 258px;">
+                    <img src="assets/img/Experience/Confrence_IIMT.jpeg" alt="" class="responsive-lg">
+                  </div>
+                </div>
                 <p id="popupText" class="manage_gap">I actively participated as a volunteer in the
                   International Conference Meeting on Recent Developments in the Architecture of Smart
                   Cities using Internet of Things (ICM-2023) held at Global Institute of Information
                   Technology, Greater Noida, on 29th–30th October 2023.</p>
               </div>
-              <div class="col-lg-6">
-                <img src="" alt="">
+              <div class="col-lg-6 d-ruby">
+                <div class="setSize d-flex" style="height: 300px;">
+                  <div class="setSize m-auto" style="width: 360px; height: 242px;">
+                    <img src="assets/img/Experience/Conference_Trinity.jpeg" alt="" class="responsive-lg">
+                  </div>
+                </div>
                 <p id="popupText" class="manage_gap">I attended a seminar at Trinity Institute of
                   Innovations in Professional Studies (TIIPS) on "Impact of AI, Machine Learning, and Big
                   Data in the Financial Ecosystem" held on 28th February 2025, which enhanced my
