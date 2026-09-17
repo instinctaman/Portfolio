@@ -62,11 +62,7 @@ const SkillsSection = () => {
               <div
                 key={skill.name}
                 className="glass-card gauge-card-box"
-                onMouseEnter={() => {
-                  sounds.playHover();
-                  setHoveredSkill(skill.name);
-                }}
-                onMouseLeave={() => setHoveredSkill(null)}
+                onMouseEnter={() => sounds.playHover()}
               >
                 {/* SVG Radial Gauge */}
                 <div className="gauge-wrapper">
