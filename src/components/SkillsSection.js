@@ -4,7 +4,6 @@ import { sounds } from '../utils/soundEffects';
 
 const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [hoveredSkill, setHoveredSkill] = useState(null);
 
   const categories = [
     { id: 'all', label: 'All Capabilities' },
