@@ -55,7 +55,6 @@ const SkillsSection = () => {
         {/* Skills Grid */}
         <div className="cards-grid-auto">
           {filteredSkills.map((skill) => {
-            const isHovered = hoveredSkill === skill.name;
             const radius = 38;
             const circumference = 2 * Math.PI * radius;
             const strokeDashoffset = circumference - (skill.percentage / 100) * circumference;
