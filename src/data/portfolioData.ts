@@ -214,7 +214,7 @@ export const PROJECTS: ProjectItem[] = [
     tag: "Featured Project",
     description: "A personal portfolio website to showcase my skills and projects.",
     extendedDetails: "Designed and engineered as a high-performance personal developer showcase with custom 3D physics interaction, dynamic palette switcher, and responsive layout systems.",
-    image: "/assets/img/Projects/Screenshot 2025-06-30 174517.png",
+    image: "/assets/img/Projects/image.png",
     liveUrl: "https://amankiportfolio.netlify.app/",
     githubUrl: "https://github.com/instinctaman",
     technologies: ["React", "JavaScript", "HTML5", "CSS3", "Responsive UI"]
